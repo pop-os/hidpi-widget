@@ -6,6 +6,11 @@ edition = "2018"
 license = "GPLv3"
 readme = "README.md"
 
+
+[workspace]
+members = [ "ffi" ]
+
+
 [dependencies]
 gio = "0.7.0"
 glib = "0.8.2"
