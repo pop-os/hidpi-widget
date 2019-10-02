@@ -8,7 +8,7 @@ readme = "README.md"
 
 
 [workspace]
-members = [ "ffi" ]
+members = [ "ffi", "tools" ]
 
 
 [dependencies]
