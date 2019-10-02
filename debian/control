@@ -1,0 +1,29 @@
+Source: system76-hidpi-widget
+Section: admin
+Priority: optional
+Maintainer: System76 <info@system76.com>
+Build-Depends:
+  debhelper (>=9),
+  cargo,
+  rustc (>=1.36.0),
+  libgtk-3-dev,
+  pkg-config,
+Standards-Version: 4.3.0
+Homepage: https://github.com/pop-os/hidpi-widget
+
+Package: libs76-hidpi-widget
+Architecture: amd64
+Depends:
+  libgtk-3-0,
+  ${misc:Depends},
+  ${shlib:Depends}
+Description: System76 HiDPI daemon widget library
+ Shared library for C which provides the System76 HiDPI daemon widget.
+
+Package: libs76-hidpi-widget-dev
+Architecture: all
+Depends:
+  libs76-hidpi-widget (= ${binary:Version}),
+  ${misc:Depends}
+Description: Pop theme switcher widget library header
+ The C header required to link to the System76 HiDPI daemon widget.
