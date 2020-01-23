@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate gtk_extras;
+extern crate derive_more;
 
 use gio::SettingsExt;
 use gtk_extras::{settings, ToggleVariant, VariantToggler};
@@ -12,7 +12,9 @@ enum HiDpiEvent {
     LoRenderHi,
 }
 
-#[derive(Shrinkwrap)]
+#[derive(AsRef, Deref)]
+#[as_ref]
+#[deref]
 pub struct HiDpiToggle(gtk::Container);
 
 impl HiDpiToggle {
