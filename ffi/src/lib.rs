@@ -11,7 +11,9 @@ pub extern "C" fn hidpi_toggle_new() -> *mut HiDpiToggle {
         gtk::set_initialized();
     }
 
-    Box::into_raw(Box::new(Toggle::new())) as *mut HiDpiToggle
+    Toggle::new().map_or(ptr::null_mut(), |toggle| {
+        Box::into_raw(Box::new(toggle)) as *mut HiDpiToggle
+    })
 }
 
 #[no_mangle]
