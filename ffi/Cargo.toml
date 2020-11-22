@@ -11,7 +11,7 @@ name = "s76_hidpi_widget"
 crate-type = [ "cdylib" ]
 
 [dependencies]
-glib = "0.9"
-gtk-sys = "0.9"
-gtk = "0.8.0"
+glib = "0.10.0"
+gtk-sys = "0.10.0"
+gtk = "0.9.0"
 hidpi-widget = { path = "../" }

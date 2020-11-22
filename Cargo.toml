@@ -13,7 +13,7 @@ members = [ "ffi", "tools" ]
 
 [dependencies]
 derive_more = "0.99"
-gio = "0.8"
-glib = "0.9"
-gtk = { version = "0.8.0", features = ["v3_22"] }
+gio = "0.9.0"
+glib = "0.10.0"
+gtk = { version = "0.9.0", features = ["v3_22"] }
 gtk-extras = { git = "https://github.com/pop-os/gtk-extras" }

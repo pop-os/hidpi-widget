@@ -41,7 +41,7 @@ fn main() {
             ..add(&widget);
             ..show_all();
             ..connect_delete_event(move |window, _| {
-                window.destroy();
+                window.close();
 
                 // Allow this closure to attain ownership of our firmware widget,
                 // so that this widget will exist for as long as the window exists.
