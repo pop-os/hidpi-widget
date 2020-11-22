@@ -15,9 +15,8 @@ Homepage: https://github.com/pop-os/hidpi-widget
 Package: libs76-hidpi-widget
 Architecture: amd64
 Depends:
-  libgtk-3-0,
   ${misc:Depends},
-  ${shlib:Depends}
+  ${shlibs:Depends}
 Description: System76 HiDPI daemon widget library
  Shared library for C which provides the System76 HiDPI daemon widget.
 
